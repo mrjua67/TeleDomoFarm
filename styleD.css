@@ -1,0 +1,66 @@
+body{
+    font-family: 'arial';
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 20px;  
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0%;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+a{
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    border-radius: 55%;
+}
+
+header{
+    background: url(farm.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
