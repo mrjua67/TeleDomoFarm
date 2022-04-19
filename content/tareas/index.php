@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>Javsascript Task App</title>
-    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-  </head>
-  <body>
+    <title>firebase CRUD</title>
+</head>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">tareas</a>
-      </div>
-    </nav>
+<body class="bg-light">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Add Task</h1>
+                        <form id="task-form">
+                            <label for="title">Title</label>
+                            <input class="form-control mb-3" type="text" placeholder="Task title" id="task-title">
 
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-md-4">
+                            <label for="description">Descripcion</label>
 
-          <div class="card">
-            <div class="card-body">
-              <!-- FORM TO ADD TASKS -->
-              <form id="formTask">
-                <div class="form-group">
-                  <input type="text" id="title" placeholder="titulo de la tarea" class="form-control">
+                            <textarea class="form-control mb-3" id="task-description" rows="3" placeholder="Task Description"></textarea>
+
+                            <button class="btn btn-primary" id="btn-task-save">Save</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <textarea id="description" cols="30" placeholder="contenido de la tarea" rows="10" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">guardar tarea</button>
-              </form>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-8">
-          <div id="tasks"></div>
+            <div class="col-md-6" id="task-container"></div>
         </div>
-      </div>
     </div>
-    <script src="./app.js"></script>
-  </body>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
 </html>
