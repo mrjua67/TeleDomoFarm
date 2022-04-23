@@ -138,39 +138,7 @@
               <i class="bx bx-filter"></i>
               <p id="counter"></p>
             </div>
-            <form action="javascript:void(0);"method="POST" onsubmit="app.Add()">
-              <input type="text" id="semillacelda" placeholder="New semilla" />
-			        <input type="text" id="cultivocelda" placeholder="New cultivo" />
-			        <input type="text" id="tiempodesignadocelda" placeholder="New design time " />
-			        <input type="text" id="diascomprovados" placeholder="New checked days " />
-              <input type="submit" value="Add" />
-            </form>
-
-            <div id="spoiler" role="aria-hidden">
-              <form action="javascript:void(0);" method="POST" id="saveEdit">
-                <input type="text" id="edit-semilla" />
-                <input type="submit" value="Edit" />
-                <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
-              </form>
-            </div>
-
-            <p id="counter"></p>
-
-            <table>
-              <tr>
-                <th>Semilla</th>
-                <th>Cultivo</th>
-                <th>Estado</th>
-                <th>Tiempo designado</th>
-                <th>Dias Comprovados</th>
-              </tr>
-              <tbody id="semillas"></tbody>
-              <tbody id="cultivo"></tbody>
-              <tbody id="estado"></tbody>
-              <tbody id="tiempoDesignado"></tbody>
-              <tbody id="diasComprovados"></tbody>
-            </table>
-
+            <iframe class="SiembrasCosechas" src="SiembrasCosechas/index.html" frameborder="0"></iframe>
             <script>
               var completed = false;
               var pending = false;

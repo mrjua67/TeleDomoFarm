@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/90a3adb1eb.js" crossorigin="anonymous"></script>
+    <title>Siembras y Cosechas</title>
+</head>
+
+<body>
+
+    <main class="main-content">
+        <div class="crud-container">
+            <div class="crud-header">
+                <h1>Siembras y Cosechas</h1>
+                <button class="button is-success" id="openModal">
+                    <i class="fas fa-plus"></i> <span>Incluir Cultivo</span> </button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Semilla</th>
+                        <th>Cultivo</th>
+                        <th>Estado</th>
+                        <th>Tiempo Designado</th>
+                        <th>Dias Comprovados</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="columns">
+                    <tr>
+                        <td class="0">1</td>
+                        <td class="1">Alverja</td>
+                        <td class="2">Cosecha</td>
+                        <td class="3">Completado</td>
+                        <td class="4">92 dias</td>
+                        <td class="5">92 dias</td>
+                        <td>
+                            <button class="button is-warning">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+                            <button class="button is-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Descripcion</p>
+                <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+            </header>
+            <section class="modal-card-body">
+                <form id="register-form">
+                    <div class="field">
+                        <label class="label">Semilla:</label>
+                        <div class="control">
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" name="semilla" id="semillas" placeholder="semilla">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-seedling"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Cultivo:</label>
+                            <div class="control">
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="text" name="cultivo" placeholder="Cultivo sembrado">
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-solid fa-wheat-awn"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Estado:</label>
+                                <div class="control">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="text" name="estado"
+                                            placeholder="Estado del cultivo sembrado">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-bars-progress"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="field">
+                                    <label class="label">Tiempo Designado:</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="number" name="tDesign" placeholder="00 dias">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-clock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Dias Comprovados:</label>
+                                <div class="control">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="number" name="dCompr"
+                                            placeholder="Dias aprovados del cultivo sembrado">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                        </span>
+                                    </div>
+                                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button type="submit" class="button is-success">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Registro de Siembras y Cultivos</span>
+                </button>
+                </form>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
