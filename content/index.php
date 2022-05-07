@@ -160,7 +160,7 @@
 							<header class="CS">Control de Seguridad</header>
 							<label for="btn-modal">X</label>
 							<div class="contenido">
-								<iframe src="SistemaSeguridad/Security-Control/index.php" frameborder="0" class="iframe"></iframe>
+								<iframe src="SistemaSeguridad/index.php" frameborder="0" class="iframe"></iframe>
 							</div>
 						</div>
 					</div>
