@@ -19,8 +19,8 @@
                 <p>TeleDomoFarm</p>
                 <nav>
                     <ul>
-                        <li><a href ="https://control-de-seguridad.herokuapp.com/">Sistemas de Sguridad</a></li>
-                        <li><a href ="https://arcane-bastion-57578.herokuapp.com/">Sistemas de Iluminacion</a></li>
+                        <li><a href ="content/SistemaSeguridad/index.php">Sistemas de Sguridad</a></li>
+                        <li><a href ="content/SistemaIluminacion/index.php">Sistemas de Iluminacion</a></li>
                         <li><a href ="content/index.php" >Dashboard</a></li>
                         <li><a href = "#"> Configuracion</a></li>    
                     </ul>
